@@ -5,7 +5,7 @@
  
  MBEZOU DJAMEN JORDAN BENI : ecriture de la fonction create_image() pour creer une structure imageppm avec des valeurs aleatoires, save_image() pour sauvegarder les valeurs d'une structure imageppm dans un fichier PPM, load_image() copier les valeur d'un fichier PPM dans une structure imageppm, cut() pour decouper une image PMM, free_image() et la fonction principal main()
 
- NJITCHEU TEUMEBA CONSTY RAPHAEL : ecriture de la fonction dom() pour foncer ou eclaircir une image ppm et a contribuer a la realisation de la fonction load_image() et main()
+ NJITCHEU TEUMEBA CONSTY RAPHAEL : ecriture de la fonction dom() pour foncer ou eclaircir une image ppm et a contribuer a la realisation de la fonction load_image() et la fonction principale main()
 
  TCHOFFO ROUSSEL NATHAN :ecriture de la fonction neg() pour la negative d'une image PMM et a contribuer a l'ecriture de la fonction load_image()
 
