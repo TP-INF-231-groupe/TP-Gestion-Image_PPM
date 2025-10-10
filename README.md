@@ -11,7 +11,7 @@
 
  APOUFONG FOYIE DUVEL NIKE : ecriture de la fonction calcul_median() et fil() pour le filtre mediane 
 
- KISSIMI KISSIMI PRINCE NATHAN : ecriture de la fonction gris() pour passe en noir et blanc
+ KISSIME KISSIME PRINCE NATHAN : ecriture de la fonction gris() pour passe en noir et blanc
 
  NJANGA KOME JACQUES YOAN : ecriture de la fonction size() pour la taille d'une image 
 
