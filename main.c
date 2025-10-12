@@ -6,7 +6,7 @@
 int main ()
 {
     char commande [256];
-    printf (" Application de traitement d'images PPM realisee par MD Jordan. \n");
+    printf (" Application de traitement d'images PPM realisee par le Groupe ProgMax. \n");
 
     while (1){
         printf (" ppmviewewr > ");
@@ -155,4 +155,5 @@ int main ()
     }    
     return 0 ;
 }
+
     
