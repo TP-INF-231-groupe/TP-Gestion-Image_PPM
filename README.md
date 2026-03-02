@@ -1,30 +1,32 @@
 # TP-Gestion-Image_PPM
 
- Le but de ce projet est de réaliser une application d’images PPM (Portable  PixMap ). Leformat d’images PPM permet destocker une image non compressée,  en écrivant la liste de pixels qu’elle contient avec leurs couleurs.                                                                                                                                
- TACHES EFFECTUES PAR CHAQUE MENBRES
- 
- MBEZOU DJAMEN JORDAN BENI : ecriture de la fonction create_image() pour creer une structure imageppm avec des valeurs aleatoires, save_image() pour sauvegarder les valeurs d'une structure imageppm dans un fichier PPM, load_image() copier les valeur d'un fichier PPM dans une structure imageppm, cut() pour decouper une image PMM, free_image() et la fonction principal main()
+## 📝 Description du Projet
+Le but de ce projet est de réaliser une application de traitement d'images au format PPM (Portable PixMap). Ce format permet de stocker une image non compressée en écrivant la liste des pixels qu'elle contient ainsi que leurs couleurs associées.
 
- NJITCHEU TEUMEBA CONSTY RAPHAEL : ecriture de la fonction dom() pour foncer ou eclaircir une image ppm et a contribuer a la realisation de la fonction load_image() et la fonction principale main()
+## 🚀 Fonctionnalités et Réalisation
+Pour mener à bien ce projet, nous avons créé une structure `ImagePPM` capable de contenir l'en-tête et la liste des pixels d'un fichier PPM. Voici les différentes fonctionnalités implémentées :
 
- TCHOFFO ROUSSEL NATHAN :ecriture de la fonction neg() pour la negative d'une image PMM et a contribuer a l'ecriture de la fonction load_image()
+* **Création et Sauvegarde :**
+  * `create_image()` : Crée une structure `ImagePPM` avec des valeurs de pixels aléatoires.
+  * `save_image()` : Sauvegarde les données de la structure dans un fichier PPM.
+  * `load_image()` : Fonction essentielle permettant de récupérer les informations d'un fichier PPM et de les stocker dans la structure.
+  * `free_image()` : Libère la mémoire allouée pour l'image.
 
- APOUFONG FOYIE DUVEL NIKE : ecriture de la fonction calcul_median() et fil() pour le filtre mediane 
+* **Manipulation et Traitement d'images :**
+  * `dom()` : Permet de foncer ou d'éclaircir une image.
+  * `gris()` : Convertit l'image en noir et blanc (nuances de gris).
+  * `size()` : Calcule ou modifie la taille d'une image.
+  * `cut()` : Découpe une partie de l'image.
+  * `neg()` : Applique un filtre négatif à l'image.
+  * `fil()` et `calcul_median()` : Appliquent un filtre médian sur l'image.
 
- KISSIME KISSIME PRINCE NATHAN : ecriture de la fonction gris() pour passe en noir et blanc
+## 👥 Contributeurs et Répartition des Tâches
 
- NJANGA KOME JACQUES YOAN : ecriture de la fonction size() pour la taille d'une image 
-
-
- REALISATION DU PROJET
-
- Nous avons decider de creer une structure ImagePPM pouvant contenir l'entete et la listes de pixels d'un ficier PPM ensuite nous ecrit la fonction create_image() pour creer la structure ImagePPM avec des valeurs aleatoires de pixels ensuite la fonction save_image() pour stocker les information de la structure ImagePPM dans un fichier PPM parsuite ecriture de la fonction load_image() essentielle pour le projet elle permet de recuperer les information d'un fichier PPM et les stocker dans la structure ImagePPM nous avons enfin pu commencer a ecrit chaque les fonctions de manioulation d'image demander dans le TP notament dom() foncer ou eclaircir une image, gris() pour passe en noir et blanc, size() pour la taille d'une image, cut() pour decouper une image, neg() pour la negative d'une image PMM et fil() pour le filtre mediane.    
- 
-
- 
-
- 
-
- 
- 
- 
+| Membre de l'équipe | Tâches effectuées |
+| :--- | :--- |
+| **MBEZOU DJAMEN JORDAN BENI** | `create_image()`, `save_image()`, `load_image()`, `cut()`, `free_image()`, fonction principale `main()`. |
+| **NJITCHEU TEUMEBA CONSTY RAPHAEL** | `dom()`, contribution à `load_image()` et à la fonction principale `main()`. |
+| **TCHOFFO ROUSSEL NATHAN** | `neg()`, contribution à `load_image()`. |
+| **APOUFONG FOYIE DUVEL NIKE** | `calcul_median()`, `fil()`. |
+| **KISSIME KISSIME PRINCE NATHAN**| `gris()`. |
+| **NJANGA KOME JACQUES YOAN** | `size()`. |
