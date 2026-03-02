@@ -1,37 +1,38 @@
-#include <stdio.h>
 #ifndef MANIP_H
 #define MANIP_H
 
-// -----------Definition des differentes structures------------ 
+#include <stdio.h>
+
+// ----------- Definition des differentes structures ------------ 
 typedef struct {
     int r, g, b; 
-} Pixel ;
+} Pixel;
 
 typedef struct {
-    char version [3];
+    char version[3];
     int largeur, hauteur, max;
-    Pixel ** pixels ;   
-} ImagePPM ;
+    Pixel **pixels;   
+} ImagePPM;
 
-// -------------Declaration des prototypes -----------
+// ------------- Declaration des prototypes -----------
 
-// Fonction de Creation et sauvegarde d'une image ppm version P3 avec valeurs aleatoires 
-ImagePPM* create_image (int larg, int hauteur, int max);
-ImagePPM* load_image(char *nom_fichier);
-void save_image (ImagePPM* image, char nom_image[]);
-void new_name(const char *, const char *, char *); 
+// Fonctions de création, chargement et sauvegarde
+ImagePPM* create_image(int larg, int hauteur, int max);
+ImagePPM* load_image(const char *nom_fichier);
+void save_image(ImagePPM* image, const char *nom_image);
+void new_name(const char *input_name, const char *suffix, char *output_name); 
 
 // Fonctions de modification des images 
-void size (ImagePPM);
-ImagePPM* dom (ImagePPM , char , float , char *);
-ImagePPM* gris (ImagePPM, char *);
-ImagePPM* neg (ImagePPM, char *);
-ImagePPM* cut (ImagePPM, int, int, int, int, char *);
-ImagePPM* fil (ImagePPM *, char *);
+void size(ImagePPM image);
+ImagePPM* dom(ImagePPM img, char couleur, float valeur, const char *nom_image);
+ImagePPM* gris(ImagePPM img, const char *nom_image);
+ImagePPM* neg(ImagePPM img, const char *nom_image);
+ImagePPM* cut(ImagePPM img, int l1, int l2, int c1, int c2, const char *nom_image);
+ImagePPM* fil(ImagePPM *img, const char *nom_image);
 
 // Autres fonctions utilitaires
-void no_commenent(FILE *);
-int calculer_mediane(int *, int );
-void free_image(ImagePPM *);
+void no_comment(FILE *f);
+int calculer_mediane(int *vals, int taille);
+void free_image(ImagePPM *image);
 
 #endif
